@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  color: #3c3c3c;
+}
+
+header h2 {
+  width: 80%;
+  font-size: 24px;
+  font-family: "inter";
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.presentation-area {
+  padding: 80px 0;
+  color: #3c3c3c;
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.presentation-area .presentation-left {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.presentation-area .presentation-left h1 {
+  padding: 0 0 50px 0;
+  font-size: 100px;
+  font-family: "inter";
+}
+
+.presentation-area .presentation-left p {
+  font-size: 16px;
+  text-align: justify;
+  font-family: "Open Sans";
+}
+
+.presentation-area .presentation-left .signature {
+  padding: 20px 0;
+}
+
+.presentation-area .presentation-left .signature p {
+  font-family: "inter";
+  font-style: italic;
+}
+
+.presentation-area .presentation-left .signature p span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.presentation-area .hero {
+  margin: 20px;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.presentation-area .hero img {
+  width: 100%;
+  border-radius: 50%;
+  border: 20px solid #f1f1f1;
+}
+
+.card-container {
+  background-color: #fafafa;
+  padding: 80px 0;
+}
+
+.card-area {
+  width: 80%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  gap: 15px;
+}
+
+.card-area .card {
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 50px 24px;
+  color: #3c3c3c;
+  border: 1px solid #f1f1f1;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.card-area .card h3 {
+  font-family: "inter";
+  font-size: 18px;
+  padding: 0px 0 20px 0;
+}
+
+.card-area .card p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: justify;
+}
+
+.card-area .card img {
+  width: 100%;
+}
+
+footer {
+  background-color: #3c3c3c;
+  padding: 30px 0 10px 0;
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact h2 {
+  font-family: "inter";
+  font-size: 24px;
+  color: #f1f1f1;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+footer .contact .contact-info {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .contact .contact-info a {
+  width: 100%;
+  color: #3c3c3c;
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 0;
+  border-radius: 50px;
+}
+
+footer .contact .contact-info a:hover {
+  background-color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .contact .contact-info a i {
+  padding: 0 10px;
+}
+
+footer .copywrite hr {
+  color: #fafafa;
+  margin: 20px 0 10px 0;
+}
+
+footer .copywrite p {
+  font-size: 16px;
+  color: #f1f1f1;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+@media only screen and (max-width: 768px) {
+  .presentation-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-area {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  footer .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .contact .contact-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .contact .contact-info a {
+    width: unset;
+    padding: 5px 10px;
+    margin: 0 10px;
+  }
+  footer h2 {
+    text-align: center;
+    font-size: 20px !important;
+    padding: 0 0 15px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-area {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .contact .contact-info {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .contact .contact-info a {
+    margin: 5px 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
